@@ -6,6 +6,7 @@ public class CodeGenPath {
     private String targetPackage;
     private String targetProject;
     private String type;
+    private boolean ignore;
 
     public String getTargetPackage() {
         return targetPackage;
@@ -29,5 +30,13 @@ public class CodeGenPath {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public boolean isIgnore() {
+        return ignore;
+    }
+
+    public void setIgnore(boolean ignore) {
+        this.ignore = ignore;
     }
 }

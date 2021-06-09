@@ -18,7 +18,12 @@ xmlMapper:
   targetPackage: cn.oddworld.api
   targetProject: '%s/src/main/java'
 
-modelOnly: true
+repository:
+  targetPackage: cn.oddworld.api
+  targetProject: '%s/src/main/java'
+  ignore: false
+
+modelOnly: false
 
 table:
   - name: animals

@@ -1,4 +1,6 @@
 package cn.oddworld.base;
+import cn.oddworld.common.FileHandleUtil;
+import cn.oddworld.common.RepositoryTemplate;
 import cn.oddworld.yml.YmlHandleUtils;
 import org.mybatis.generator.api.MyBatisGenerator;
 import org.mybatis.generator.config.*;
@@ -87,6 +89,11 @@ public  class BaseHandler implements Handler{
             batchInsertPlugin.addProperty("mappers","tk.mybatis.mapper.common.Mapper");
             context.addPluginConfiguration(batchInsertPlugin);
 
+            // 添加批量操作的插件
+            PluginConfiguration batchInsertSelectivePlugin = new PluginConfiguration();
+            batchInsertSelectivePlugin.setConfigurationType("cn.oddworld.plugins.BatchInsertSelectivePlugin");
+            batchInsertSelectivePlugin.addProperty("mappers","tk.mybatis.mapper.common.Mapper");
+            context.addPluginConfiguration(batchInsertSelectivePlugin);
 
             config.addContext(context);
             // 支持覆盖原来生成的代码
@@ -94,6 +101,28 @@ public  class BaseHandler implements Handler{
             MyBatisGenerator myBatisGenerator = new MyBatisGenerator(config, callback, warnings);
             // 出发生成代码的动作
             myBatisGenerator.generate(null);
+
+            // 需要生成repository
+            if(!genContext.isModelOnly() && !genContext.getRepository().isIgnore()){
+
+                String targetPackage = genContext.getRepository().getTargetPackage();
+                String targetProject = genContext.getRepository().getTargetProject();
+                List<TableConfig> tableList = genContext.getTable();
+                for (TableConfig table : tableList) {
+                    String content = RepositoryTemplate.outputContent;
+                    String tableName = FileHandleUtil.generateName(table.getName());
+                    String lowerName = FileHandleUtil.lowerStart(tableName);
+                    String importEntity = genContext.getEntity().getTargetPackage()+"."+tableName+"Entity";
+                    String importMapper = genContext.getMapper().getTargetPackage()+"."+tableName+"Mapper";
+                    content = String.format(content, targetPackage, importEntity, importMapper
+                            ,tableName, tableName, lowerName, tableName, lowerName,
+                            lowerName, lowerName, tableName, lowerName, lowerName, lowerName);
+
+                    String path =  String.format(targetProject,contextPath) +"/"+ targetPackage.replaceAll("\\.", "/");
+                    String repositoryFile = path+"/"+tableName+"Repository.java";
+                    FileHandleUtil.fileOutput(content,path,repositoryFile);
+                }
+            }
         }catch (IOException e0){
             warnings.add(String.format("BaseHandler codeGen IOException => %s", e0.getMessage()));
         }catch (InvalidConfigurationException e2){

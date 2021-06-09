@@ -1,7 +1,6 @@
 package cn.oddworld.plugins;
 
 import cn.oddworld.common.Constant;
-import org.mybatis.generator.api.FullyQualifiedTable;
 import org.mybatis.generator.api.IntrospectedColumn;
 import org.mybatis.generator.api.IntrospectedTable;
 import org.mybatis.generator.api.PluginAdapter;
@@ -14,10 +13,7 @@ import org.mybatis.generator.codegen.mybatis3.ListUtilities;
 import org.mybatis.generator.codegen.mybatis3.MyBatis3FormattingUtilities;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class BatInsertPlugin extends PluginAdapter {
 
@@ -53,10 +49,8 @@ public class BatInsertPlugin extends PluginAdapter {
     @Override
     public boolean sqlMapDocumentGenerated(Document document, IntrospectedTable introspectedTable) {
 
-          // 构建batchInsert的xml
-          batchInsert(document, introspectedTable);
-
-
+        // 构建batchInsert的xml
+        batchInsert(document, introspectedTable);
         return true;
     }
 
@@ -69,7 +63,6 @@ public class BatInsertPlugin extends PluginAdapter {
         xml.addAttribute(new Attribute("parameterType", "java.util.List"));
 
         StringBuilder insertClause = new StringBuilder();
-
 
         insertClause.append("insert into ");
         insertClause.append(introspectedTable.getFullyQualifiedTableNameAtRuntime());
@@ -106,13 +99,14 @@ public class BatInsertPlugin extends PluginAdapter {
         foreachElement.addAttribute(new Attribute("item", "item"));
         foreachElement.addAttribute(new Attribute("separator", ","));
 
-//        for (String clause :  ) {
-//            foreachElement.addElement(new TextElement(clause));
-//        }
+        for (String clause : valuesClauses) {
+            foreachElement.addElement(new TextElement(clause));
+        }
 
         // values 构建
         xml.addElement(new TextElement("values"));
         xml.addElement(foreachElement);
+        document.getRootElement().addElement(new TextElement("\n"));
         document.getRootElement().addElement(xml);
     }
 }
