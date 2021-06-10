@@ -11,15 +11,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec3d2d37-db06-43f3-a29b-a20e2112b281" name="Default Changelist" comment="fist commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/common/FileHandleUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/common/RepositoryTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/plugins/BatchInsertSelectivePlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/chain/HandleChain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/chain/HandleChainClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/chain/concrete/GeneratorFileHandleChain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/chain/concrete/PluginHandleChain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/chain/concrete/RepositoryHandleChain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/chain/concrete/TableHandleChain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/oddworld/base/BaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/base/BaseHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/oddworld/base/CodeGenPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/base/CodeGenPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/oddworld/common/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/common/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/oddworld/plugins/BatInsertPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/plugins/BatInsertPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/test.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/oddworld/base/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/base/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/oddworld/common/RepositoryTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/common/ClassTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cn/oddworld/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/oddworld/Client.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +113,8 @@
       <updated>1620713516637</updated>
       <workItem from="1620826372447" duration="8738000" />
       <workItem from="1623069199596" duration="4143000" />
-      <workItem from="1623245676151" duration="7470000" />
+      <workItem from="1623245676151" duration="7526000" />
+      <workItem from="1623327973731" duration="2416000" />
     </task>
     <task id="LOCAL-00001" summary="fist commit">
       <created>1620836413774</created>
@@ -120,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620836413774</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fist commit">
+      <created>1623253231820</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623253231820</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,11 +161,11 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="398" y="143" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1620718108287" />
-    <state x="669" y="75" key="#com.intellij.ide.util.MemberChooser" timestamp="1623249475462">
+    <state x="669" y="75" key="#com.intellij.ide.util.MemberChooser" timestamp="1623329798182">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="446" y="49" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1620730316650" />
-    <state x="669" y="75" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1623249475462" />
+    <state x="669" y="75" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1623329798182" />
     <state x="683" y="281" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1620836060381">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -168,55 +178,55 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="733" y="289" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1623249930402" />
-    <state width="1695" height="262" key="GridCell.Tab.0.bottom" timestamp="1623252856444">
+    <state width="1695" height="436" key="GridCell.Tab.0.bottom" timestamp="1623253277454">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1202" height="173" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1620739614364" />
-    <state width="1695" height="262" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1623252856444" />
-    <state width="1695" height="262" key="GridCell.Tab.0.center" timestamp="1623252856444">
+    <state width="1695" height="436" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1623253277454" />
+    <state width="1695" height="436" key="GridCell.Tab.0.center" timestamp="1623253277454">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1202" height="173" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1620739614363" />
-    <state width="1695" height="262" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1623252856444" />
-    <state width="1695" height="262" key="GridCell.Tab.0.left" timestamp="1623252856444">
+    <state width="1695" height="436" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1623253277454" />
+    <state width="1695" height="436" key="GridCell.Tab.0.left" timestamp="1623253277454">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1202" height="173" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1620739614363" />
-    <state width="1695" height="262" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1623252856444" />
-    <state width="1695" height="262" key="GridCell.Tab.0.right" timestamp="1623252856444">
+    <state width="1695" height="436" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1623253277454" />
+    <state width="1695" height="436" key="GridCell.Tab.0.right" timestamp="1623253277454">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1202" height="173" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1620739614363" />
-    <state width="1695" height="262" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1623252856444" />
-    <state width="1695" height="436" key="GridCell.Tab.1.bottom" timestamp="1623251627934">
+    <state width="1695" height="436" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1623253277454" />
+    <state width="1695" height="436" key="GridCell.Tab.1.bottom" timestamp="1623253277455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1202" height="150" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1620738150156" />
-    <state width="1695" height="436" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1623251627934" />
-    <state width="1695" height="436" key="GridCell.Tab.1.center" timestamp="1623251627934">
+    <state width="1695" height="436" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1623253277455" />
+    <state width="1695" height="436" key="GridCell.Tab.1.center" timestamp="1623253277454">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1202" height="150" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1620738150155" />
-    <state width="1695" height="436" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1623251627934" />
-    <state width="1695" height="436" key="GridCell.Tab.1.left" timestamp="1623251627934">
+    <state width="1695" height="436" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1623253277454" />
+    <state width="1695" height="436" key="GridCell.Tab.1.left" timestamp="1623253277454">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1202" height="150" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1620738150155" />
-    <state width="1695" height="436" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1623251627934" />
-    <state width="1695" height="436" key="GridCell.Tab.1.right" timestamp="1623251627934">
+    <state width="1695" height="436" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1623253277454" />
+    <state width="1695" height="436" key="GridCell.Tab.1.right" timestamp="1623253277454">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1202" height="150" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1620738150155" />
-    <state width="1695" height="436" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1623251627934" />
+    <state width="1695" height="436" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1623253277454" />
     <state x="448" y="241" key="SettingsEditor" timestamp="1620826752584">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1620716430663" />
     <state x="448" y="241" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1620826752584" />
-    <state x="545" y="267" key="Vcs.Push.Dialog.v2" timestamp="1620836418291">
+    <state x="545" y="267" key="Vcs.Push.Dialog.v2" timestamp="1623253235692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="545" y="267" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1620836418291" />
+    <state x="545" y="267" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1623253235692" />
     <state width="877" height="485" key="XDebugger.FullValuePopup" timestamp="1623072610165">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -242,21 +252,6 @@
           <url>jar://$USER_HOME$/.m2/repository/org/mybatis/generator/mybatis-generator-core/1.3.7/mybatis-generator-core-1.3.7-sources.jar!/org/mybatis/generator/api/dom/java/JavaDomUtils.java</url>
           <line>40</line>
           <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/cn/oddworld/base/BaseHandler.java</url>
-          <line>120</line>
-          <option name="timeStamp" value="73" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/cn/oddworld/base/BaseHandler.java</url>
-          <line>121</line>
-          <option name="timeStamp" value="74" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/cn/oddworld/base/BaseHandler.java</url>
-          <line>122</line>
-          <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/cn/oddworld/common/FileHandleUtil.java</url>

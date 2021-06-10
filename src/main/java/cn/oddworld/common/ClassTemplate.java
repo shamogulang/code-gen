@@ -1,6 +1,6 @@
 package cn.oddworld.common;
 
-public interface RepositoryTemplate {
+public interface ClassTemplate {
 
 
     String outputContent = "package %s;\n" +

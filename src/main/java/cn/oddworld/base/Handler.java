@@ -5,5 +5,5 @@ import java.util.List;
 
 public interface Handler {
 
-    List<String> genCode(InputStream inputStream);
+    List<String> genCode(InputStream inputStream, String moduleRootPath);
 }
