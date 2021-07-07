@@ -10,18 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3d2d37-db06-43f3-a29b-a20e2112b281" name="Default Changelist" comment="fist commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/chain/HandleChain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/chain/HandleChainClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/chain/concrete/GeneratorFileHandleChain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/chain/concrete/PluginHandleChain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/chain/concrete/RepositoryHandleChain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/chain/concrete/TableHandleChain.java" afterDir="false" />
+    <list default="true" id="ec3d2d37-db06-43f3-a29b-a20e2112b281" name="Default Changelist" comment="优化代码">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/oddworld/base/BaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/base/BaseHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/oddworld/base/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/base/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/oddworld/common/RepositoryTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/common/ClassTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/oddworld/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/oddworld/Client.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +43,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../study/caraliu/caraliu-mng-library" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../code-gen-plugin" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3402299" />
@@ -114,7 +104,7 @@
       <workItem from="1620826372447" duration="8738000" />
       <workItem from="1623069199596" duration="4143000" />
       <workItem from="1623245676151" duration="7526000" />
-      <workItem from="1623327973731" duration="2416000" />
+      <workItem from="1623327973731" duration="3887000" />
     </task>
     <task id="LOCAL-00001" summary="fist commit">
       <created>1620836413774</created>
@@ -130,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623253231820</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="优化代码">
+      <created>1623330559162</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1623330559162</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,7 +147,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fist commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="fist commit" />
+    <MESSAGE value="优化代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化代码" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="0" key="#Project_Structure" timestamp="1620715057441">
@@ -174,30 +172,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="505" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1623251447308" />
-    <state x="733" y="289" key="FileChooserDialogImpl" timestamp="1623249930402">
+    <state x="733" y="289" key="FileChooserDialogImpl" timestamp="1623331499352">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="733" y="289" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1623249930402" />
-    <state width="1695" height="436" key="GridCell.Tab.0.bottom" timestamp="1623253277454">
+    <state x="733" y="289" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1623331499352" />
+    <state width="1695" height="262" key="GridCell.Tab.0.bottom" timestamp="1623333326225">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1202" height="173" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1620739614364" />
-    <state width="1695" height="436" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1623253277454" />
-    <state width="1695" height="436" key="GridCell.Tab.0.center" timestamp="1623253277454">
+    <state width="1695" height="262" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1623333326225" />
+    <state width="1695" height="262" key="GridCell.Tab.0.center" timestamp="1623333326225">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1202" height="173" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1620739614363" />
-    <state width="1695" height="436" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1623253277454" />
-    <state width="1695" height="436" key="GridCell.Tab.0.left" timestamp="1623253277454">
+    <state width="1695" height="262" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1623333326225" />
+    <state width="1695" height="262" key="GridCell.Tab.0.left" timestamp="1623333326225">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1202" height="173" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1620739614363" />
-    <state width="1695" height="436" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1623253277454" />
-    <state width="1695" height="436" key="GridCell.Tab.0.right" timestamp="1623253277454">
+    <state width="1695" height="262" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1623333326225" />
+    <state width="1695" height="262" key="GridCell.Tab.0.right" timestamp="1623333326225">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1202" height="173" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1620739614363" />
-    <state width="1695" height="436" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1623253277454" />
+    <state width="1695" height="262" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1623333326225" />
     <state width="1695" height="436" key="GridCell.Tab.1.bottom" timestamp="1623253277455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -240,6 +238,10 @@
     </state>
     <state x="311" y="73" width="969" height="534" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1620722392145" />
     <state x="322" y="106" width="1454" height="817" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1623072692058" />
+    <state x="328" y="195" key="new project wizard" timestamp="1623330682946">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="328" y="195" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1623330682946" />
     <state x="616" y="260" width="672" height="678" key="search.everywhere.popup" timestamp="1623071735628">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
