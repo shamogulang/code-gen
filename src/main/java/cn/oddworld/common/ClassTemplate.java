@@ -22,10 +22,5 @@ public interface ClassTemplate {
             "\n" +
             "        return %sMapper.batchInsert(%sList);\n" +
             "    }\n" +
-            "\n" +
-            "    private int insertBatchSelective(List<%s> %sList){\n" +
-            "\n" +
-            "        return %sMapper.batchInsertSelective(%sList);\n" +
-            "    }\n" +
             "}";
 }

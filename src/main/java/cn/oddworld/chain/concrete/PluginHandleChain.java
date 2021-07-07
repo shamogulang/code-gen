@@ -22,11 +22,5 @@ public class PluginHandleChain implements HandleChain {
         batchInsertPlugin.setConfigurationType("cn.oddworld.plugins.BatInsertPlugin");
         batchInsertPlugin.addProperty("mappers","tk.mybatis.mapper.common.Mapper");
         context.addPluginConfiguration(batchInsertPlugin);
-
-        // 添加批量操作的插件
-        PluginConfiguration batchInsertSelectivePlugin = new PluginConfiguration();
-        batchInsertSelectivePlugin.setConfigurationType("cn.oddworld.plugins.BatchInsertSelectivePlugin");
-        batchInsertSelectivePlugin.addProperty("mappers","tk.mybatis.mapper.common.Mapper");
-        context.addPluginConfiguration(batchInsertSelectivePlugin);
     }
 }

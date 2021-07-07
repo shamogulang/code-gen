@@ -12,6 +12,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ec3d2d37-db06-43f3-a29b-a20e2112b281" name="Default Changelist" comment="优化代码">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/oddworld/chain/concrete/PluginHandleChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/chain/concrete/PluginHandleChain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/oddworld/common/ClassTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/common/ClassTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/oddworld/plugins/BatchInsertSelectivePlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/oddworld/chain/concrete/PluginHandleChain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/oddworld/chain/concrete/PluginHandleChain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/oddworld/chain/concrete/RepositoryHandleChain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/oddworld/chain/concrete/RepositoryHandleChain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/oddworld/common/ClassTemplate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/oddworld/common/ClassTemplate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/oddworld/plugins/BatchInsertSelectivePlugin.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +112,7 @@
       <workItem from="1623069199596" duration="4143000" />
       <workItem from="1623245676151" duration="7526000" />
       <workItem from="1623327973731" duration="3887000" />
+      <workItem from="1625665621046" duration="746000" />
     </task>
     <task id="LOCAL-00001" summary="fist commit">
       <created>1620836413774</created>
@@ -127,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623330559162</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="优化代码">
+      <created>1625665657861</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1625665657861</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,26 +191,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="733" y="289" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1623331499352" />
-    <state width="1695" height="262" key="GridCell.Tab.0.bottom" timestamp="1623333326225">
+    <state width="1860" height="276" key="GridCell.Tab.0.bottom" timestamp="1625666314553">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1202" height="173" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1620739614364" />
-    <state width="1695" height="262" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1623333326225" />
-    <state width="1695" height="262" key="GridCell.Tab.0.center" timestamp="1623333326225">
+    <state width="1860" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1625666314553" />
+    <state width="1860" height="276" key="GridCell.Tab.0.center" timestamp="1625666314552">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1202" height="173" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1620739614363" />
-    <state width="1695" height="262" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1623333326225" />
-    <state width="1695" height="262" key="GridCell.Tab.0.left" timestamp="1623333326225">
+    <state width="1860" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1625666314552" />
+    <state width="1860" height="276" key="GridCell.Tab.0.left" timestamp="1625666314552">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1202" height="173" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1620739614363" />
-    <state width="1695" height="262" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1623333326225" />
-    <state width="1695" height="262" key="GridCell.Tab.0.right" timestamp="1623333326225">
+    <state width="1860" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1625666314552" />
+    <state width="1860" height="276" key="GridCell.Tab.0.right" timestamp="1625666314553">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1202" height="173" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1620739614363" />
-    <state width="1695" height="262" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1623333326225" />
+    <state width="1860" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625666314553" />
     <state width="1695" height="436" key="GridCell.Tab.1.bottom" timestamp="1623253277455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -221,10 +236,10 @@
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1620716430663" />
     <state x="448" y="241" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1620826752584" />
-    <state x="545" y="267" key="Vcs.Push.Dialog.v2" timestamp="1623253235692">
+    <state x="545" y="267" key="Vcs.Push.Dialog.v2" timestamp="1625665782073">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="545" y="267" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1623253235692" />
+    <state x="545" y="267" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1625665782073" />
     <state width="877" height="485" key="XDebugger.FullValuePopup" timestamp="1623072610165">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
