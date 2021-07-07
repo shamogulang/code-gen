@@ -12,13 +12,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ec3d2d37-db06-43f3-a29b-a20e2112b281" name="Default Changelist" comment="优化代码">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/oddworld/chain/concrete/PluginHandleChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/chain/concrete/PluginHandleChain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/oddworld/chain/concrete/RepositoryHandleChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/chain/concrete/RepositoryHandleChain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/oddworld/common/ClassTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/common/ClassTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/oddworld/plugins/BatchInsertSelectivePlugin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/oddworld/chain/concrete/PluginHandleChain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/oddworld/chain/concrete/PluginHandleChain.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/cn/oddworld/chain/concrete/RepositoryHandleChain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/oddworld/chain/concrete/RepositoryHandleChain.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/cn/oddworld/common/ClassTemplate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/oddworld/common/ClassTemplate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/oddworld/plugins/BatchInsertSelectivePlugin.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +55,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.oddworld.common" />
       <recent name="cn.oddworld" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -153,12 +151,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fist commit" />
@@ -191,25 +190,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="733" y="289" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1623331499352" />
-    <state width="1860" height="276" key="GridCell.Tab.0.bottom" timestamp="1625666314553">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1202" height="122" key="GridCell.Tab.0.bottom" timestamp="1625668623771">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1202" height="173" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1620739614364" />
+    <state width="1202" height="122" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1625668623771" />
     <state width="1860" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1625666314553" />
-    <state width="1860" height="276" key="GridCell.Tab.0.center" timestamp="1625666314552">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1202" height="122" key="GridCell.Tab.0.center" timestamp="1625668623770">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1202" height="173" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1620739614363" />
+    <state width="1202" height="122" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1625668623770" />
     <state width="1860" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1625666314552" />
-    <state width="1860" height="276" key="GridCell.Tab.0.left" timestamp="1625666314552">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1202" height="122" key="GridCell.Tab.0.left" timestamp="1625668623770">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1202" height="173" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1620739614363" />
+    <state width="1202" height="122" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1625668623770" />
     <state width="1860" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1625666314552" />
-    <state width="1860" height="276" key="GridCell.Tab.0.right" timestamp="1625666314553">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1202" height="122" key="GridCell.Tab.0.right" timestamp="1625668623771">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1202" height="173" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1620739614363" />
+    <state width="1202" height="122" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1625668623771" />
     <state width="1860" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625666314553" />
     <state width="1695" height="436" key="GridCell.Tab.1.bottom" timestamp="1623253277455">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -248,10 +247,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="465" y="263" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040@0.0.1920.1040" timestamp="1620835660857" />
-    <state x="322" y="106" width="1454" height="817" key="find.popup" timestamp="1623072692058">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="311" y="73" width="969" height="534" key="find.popup" timestamp="1625666857295">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="311" y="73" width="969" height="534" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1620722392145" />
+    <state x="311" y="73" width="969" height="534" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1625666857295" />
     <state x="322" y="106" width="1454" height="817" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1623072692058" />
     <state x="328" y="195" key="new project wizard" timestamp="1623330682946">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -266,7 +265,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.m2/repository/org/mybatis/generator/mybatis-generator-core/1.3.7/mybatis-generator-core-1.3.7-sources.jar!/org/mybatis/generator/api/dom/java/JavaDomUtils.java</url>
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/generator/mybatis-generator-core/1.3.7/mybatis-generator-core-1.3.7-sources.jar!/org/mybatis/generator/api/dom/java/JavaDomUtils.java</url>
           <line>40</line>
           <option name="timeStamp" value="58" />
         </line-breakpoint>

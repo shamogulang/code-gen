@@ -24,14 +24,15 @@ public class RepositoryHandleChain implements HandleChain {
         String targetProject = genContext.getRepository().getTargetProject();
         List<TableConfig> tableList = genContext.getTable();
         for (TableConfig table : tableList) {
-            String content = ClassTemplate.outputContent;
+            String content = ClassTemplate.outputRepository;
             String tableName = FileHandleUtil.generateName(table.getName());
             String lowerName = FileHandleUtil.lowerStart(tableName);
             String importEntity = genContext.getEntity().getTargetPackage()+"."+tableName;
             String importMapper = genContext.getMapper().getTargetPackage()+"."+tableName+"Mapper";
-            content = String.format(content, targetPackage, importEntity, importMapper
-                    ,tableName, tableName, lowerName, tableName, lowerName,
-                    lowerName, lowerName, tableName, lowerName, lowerName, lowerName);
+            content = String.format(content, targetPackage, importEntity, importMapper);
+
+            content = content.replace("UPNAME_", tableName);
+            content = content.replace("LOWNAME_", lowerName);
 
             String path =  String.format(targetProject, moduleRootPath) +"/"+ targetPackage.replaceAll("\\.", "/");
             String repositoryFile = path+"/"+tableName+"Repository.java";
