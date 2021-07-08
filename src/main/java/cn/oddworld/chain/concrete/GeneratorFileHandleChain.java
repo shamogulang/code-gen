@@ -30,7 +30,6 @@ public class GeneratorFileHandleChain implements HandleChain {
         javaModelGen.setTargetPackage(genContext.getEntity().getTargetPackage());
         javaModelGen.setTargetProject(String.format(genContext.getEntity().getTargetProject(), moduleRootPath));
 
-
         context.setJavaClientGeneratorConfiguration(javaCli);
         context.setJavaModelGeneratorConfiguration(javaModelGen);
         context.setSqlMapGeneratorConfiguration(sqlMapGen);
@@ -39,5 +38,6 @@ public class GeneratorFileHandleChain implements HandleChain {
 
         context.setId("Mysql");
         context.setTargetRuntime("MyBatis3Simple");
+        context.addProperty("javaFileEncoding", "UTF-8");
     }
 }
