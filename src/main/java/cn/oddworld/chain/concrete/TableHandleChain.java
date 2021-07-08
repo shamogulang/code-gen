@@ -23,6 +23,7 @@ public class TableHandleChain implements HandleChain {
             tableConfiguration.setAllColumnDelimitingEnabled(false);
             tableConfiguration.setCountByExampleStatementEnabled(false);
             tableConfiguration.setInsertStatementEnabled(false);
+            tableConfiguration.addProperty("modelOnly", genContext.isModelOnly()+"");
             context.addTableConfiguration(tableConfiguration);
         });
     }
