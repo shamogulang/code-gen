@@ -9,7 +9,7 @@ import java.util.List;
 public class Client {
 
     public static void main(String[] args) throws Exception{
-        FileInputStream in = new FileInputStream(new File("E:\\github\\code-gen\\src\\main\\resources\\test.yml"));
+        FileInputStream in = new FileInputStream(new File("D:\\jeffchan\\workspace\\code-gen\\src\\test\\resources\\test.yml"));
         BaseHandler baseHandler = new BaseHandler();
         String contextPath = System.getProperty("user.dir");
         contextPath = contextPath.replace("\\", "/");

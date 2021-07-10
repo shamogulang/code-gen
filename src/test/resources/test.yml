@@ -1,0 +1,30 @@
+##mybatis代码自动生成代码##
+
+connection:
+  driverClass: com.mysql.jdbc.Driver
+  connectionURL: jdbc:mysql://localhost:3306/caraliu?serverTimezone=UTC
+  userId: root
+  password: 123456
+
+entity:
+  targetPackage: cn.oddworld.api
+  targetProject: '%s/src/main/java'
+
+mapper:
+  targetPackage: cn.oddworld.api
+  targetProject: '%s/src/main/java'
+
+xmlMapper:
+  targetPackage: cn.oddworld.api
+  targetProject: '%s/src/main/java'
+
+repository:
+  targetPackage: cn.oddworld.api
+  targetProject: '%s/src/main/java'
+  ignore: false
+
+modelOnly: false
+
+table:
+  - name: animals1
+    column: id

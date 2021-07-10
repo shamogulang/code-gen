@@ -11,12 +11,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec3d2d37-db06-43f3-a29b-a20e2112b281" name="Default Changelist" comment="优化代码">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/test.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/oddworld/chain/concrete/RepositoryHandleChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/chain/concrete/RepositoryHandleChain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/oddworld/common/ClassTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/oddworld/common/ClassTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/oddworld/chain/concrete/RepositoryHandleChain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/oddworld/chain/concrete/RepositoryHandleChain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/oddworld/common/ClassTemplate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/oddworld/common/ClassTemplate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cn/oddworld/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/oddworld/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/code-gen.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/oddworld/chain/concrete/GeneratorFileHandleChain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/oddworld/chain/concrete/GeneratorFileHandleChain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/oddworld/chain/concrete/PluginHandleChain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/oddworld/chain/concrete/PluginHandleChain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/oddworld/chain/concrete/TableHandleChain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/oddworld/chain/concrete/TableHandleChain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/cn/oddworld/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/cn/oddworld/Client.class" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,13 +52,16 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../code-gen-plugin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3402299" />
     <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\jeffchan\workspace\code-gen\src\test\resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="cn.oddworld.common" />
       <recent name="cn.oddworld" />
@@ -62,10 +70,22 @@
       <recent name="D:\chinna-mobile\code\code-gen\src\main\resources" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager" selected="Application.Client">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.oddworld.Client" />
-      <module name="code-gen" />
+      <module name="codeGen" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cn.oddworld.*" />
@@ -111,6 +131,7 @@
       <workItem from="1623245676151" duration="7526000" />
       <workItem from="1623327973731" duration="3887000" />
       <workItem from="1625665621046" duration="746000" />
+      <workItem from="1625920281562" duration="290000" />
     </task>
     <task id="LOCAL-00001" summary="fist commit">
       <created>1620836413774</created>
@@ -144,7 +165,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
