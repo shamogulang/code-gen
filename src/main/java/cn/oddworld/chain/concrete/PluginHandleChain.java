@@ -17,15 +17,15 @@ public class PluginHandleChain implements HandleChain {
         pluginConfiguration.addProperty("mappers","tk.mybatis.mapper.common.Mapper");
         context.addPluginConfiguration(pluginConfiguration);
 
-        // 如果是只生成model
-        // 那么这个插件的方法不加入进去
-        if(genContext.isModelOnly()){
-            return;
-        }
         // 添加批量操作的插件
         PluginConfiguration batchInsertPlugin = new PluginConfiguration();
         batchInsertPlugin.setConfigurationType("cn.oddworld.plugins.BatInsertPlugin");
         batchInsertPlugin.addProperty("mappers","tk.mybatis.mapper.common.Mapper");
         context.addPluginConfiguration(batchInsertPlugin);
+
+        PluginConfiguration overwritePlugin = new PluginConfiguration();
+        overwritePlugin.setConfigurationType("org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin");
+        overwritePlugin.addProperty("mappers","tk.mybatis.mapper.common.Mapper");
+        context.addPluginConfiguration(overwritePlugin);
     }
 }
